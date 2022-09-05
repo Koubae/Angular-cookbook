@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-project';
+  title: string = 'Angular Cook-Book'; // todo: take from .env file
+
 }
