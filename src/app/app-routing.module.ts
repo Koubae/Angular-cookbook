@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import ModuleHome from "./modules/home/home.module";
+import {ModuleHome} from "./modules/home/home.module";
+import {ViewHomeComponent} from "./modules/home/components/home.component";
 
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', component:ModuleHome},
-  // todo: add error handlers
+  {
+    path: '',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.ModuleHome),
+    title: "Home"
+
+  },
+  {
+    path: '**',
+    redirectTo: 'error',
+    title: "Error"
+  }
 ];
 
 @NgModule({

@@ -1,8 +1,8 @@
 import { NgModule} from "@angular/core";
 
-// Components
-import ViewHomeComponent from "./components/home.component";
 import ModuleHomeRouting from "./home-routing.module";
+// Components
+import { ViewHomeComponent } from "./components/home.component";
 
 
 @NgModule({
@@ -11,6 +11,9 @@ import ModuleHomeRouting from "./home-routing.module";
   ],
   declarations: [
     ViewHomeComponent,
+  ],
+  exports: [
+    ViewHomeComponent
   ]
 })
-export default class ModuleHome {}
+export class ModuleHome {}

@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './modules/base/app.component';
 
 // App-Modules
-import ModuleHome from "./modules/home/home.module";
+import { ModuleHome } from "./modules/home/home.module";
+import {ModuleErrorPages} from "./modules/errorPages/errorPages.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import ModuleHome from "./modules/home/home.module";
     AppRoutingModule,
 
     // App-Views-Modules
-    ModuleHome
+    ModuleHome,
+    ModuleErrorPages
   ],
   providers: [],
   bootstrap: [AppComponent]
