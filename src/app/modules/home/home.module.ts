@@ -2,7 +2,7 @@ import { NgModule} from "@angular/core";
 
 import ModuleHomeRouting from "./home-routing.module";
 // Components
-import { ViewHomeComponent } from "./components/home.component";
+import { ViewHomeComponent } from "./view/home.component";
 
 
 @NgModule({

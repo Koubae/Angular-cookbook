@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Components
-import { ViewErrorPagesComponent} from "./components/errorPages.component";
+import { ViewErrorPagesComponent} from "./view/errorPages.component";
 
 const routes: Routes = [
   { path: 'error', component: ViewErrorPagesComponent,  title: "Error" }
