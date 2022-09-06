@@ -15,6 +15,7 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { MainComponent } from './components/main/main.component';
 
 
 
@@ -25,6 +26,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     SidebarComponent,
     FooterComponent,
     NavbarComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
