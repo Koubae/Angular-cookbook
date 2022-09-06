@@ -1,11 +1,29 @@
 <core-header [title]="bannerTitle" [height]="5"></core-header>
 <core-content>
   <section id="section-dashboard-content">
-     <core-paper
-      [elevation]="8"
-    >
-        <h1> Hello from dashboard </h1>
-     </core-paper>
+
+    <mat-grid-list cols="5" rowHeight="350px">
+
+      <mat-grid-tile *ngFor="let component of components | keyvalue" id="{{'card-component-' + component.value.key}}">
+        <core-paper
+          [elevation]="4"
+        >
+          <div class="dashboard-item-box">
+            <h3> {{component.value.title}} </h3>
+            <p>
+              <mat-icon>{{ component.value.icon}}</mat-icon>
+            </p>
+            <a mat-raised-button color="primary" routerLink="{{'/dashboard/' + component.value.link}}">
+              <span>View</span>
+            </a>
+          </div>
+
+        </core-paper>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+
   </section>
 
 </core-content>

@@ -6,6 +6,12 @@ import ModuleDashboardRouting from "./dashboard-routing.module";
 import {ModuleCore} from "../../core/core.module";
 // Components
 import {ViewDashboardComponent} from "./view/dashboard-view.component";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
+import {RouterLinkWithHref} from "@angular/router";
+import {KeyValuePipe, NgForOf} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -13,7 +19,14 @@ import {ViewDashboardComponent} from "./view/dashboard-view.component";
   ],
   imports: [
     ModuleDashboardRouting,
-    ModuleCore
+    ModuleCore,
+    MatGridListModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    RouterLinkWithHref,
+    KeyValuePipe,
+    NgForOf
   ],
   exports: [
     ViewDashboardComponent,

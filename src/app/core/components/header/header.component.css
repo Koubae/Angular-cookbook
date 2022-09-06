@@ -1,23 +1,30 @@
 .header-component {
   text-align: center;
   margin-top: 1rem;
+  overflow: hidden;
 }
-
+.header-component-box {
+  overflow: hidden;
+}
 .header-component-bordered {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .header-component-grid {
+    overflow: hidden;
 }
 .header-component-grid-tile {
   height: 100%!important;
+   overflow: hidden;
 }
+
 .header-component-title {
   font-size: 2rem;
   font-weight: bolder;
   padding: .5rem;
   letter-spacing: .5rem;
   border-bottom: .8px solid grey;
+   overflow: hidden;
 }
 
 .header-component-title-sub {

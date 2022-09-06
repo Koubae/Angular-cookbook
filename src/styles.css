@@ -44,3 +44,8 @@ body {
   background-color: var(--background-white);
 
 }
+
+
+.mat-grid-tile-content {
+   overflow: hidden;
+}
