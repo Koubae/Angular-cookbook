@@ -7,6 +7,7 @@ import {AppComponent} from "./app.component";
 // App-Views-Modules
 import { ModuleBase } from "./modules/base/base.module";
 import { ModuleHome } from "./modules/home/home.module";
+import { ModuleDashboard } from "./modules/dashboard/dashboard.module";
 import {ModuleErrorPages} from "./modules/errorPages/errorPages.module";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // App-Views-Modules
     ModuleBase,
     ModuleHome,
+    ModuleDashboard,
     ModuleErrorPages,
     BrowserAnimationsModule
   ],
