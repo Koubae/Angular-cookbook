@@ -1,0 +1,21 @@
+<header
+  id="view-header"
+  class="header-component"
+  [class.header-component-bordered]="withBorder"
+  [class.mat-elevation-z2]="elevated"
+>
+  <mat-grid-list class="header-component-grid" cols="1" rowHeight="{{ height.toString() + 'vh' }}">
+    <mat-grid-tile class="header-component-grid-tile" [rowspan]="2">
+      <div>
+        <h1 class="header-component-title">{{title}}</h1>
+        <h5 class="header-component-title-sub">{{titleSub}}</h5>
+        <div #headerContent [class.header-component-content]="headerHasContent">
+           <ng-content></ng-content>
+        </div>
+      </div>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+</header>

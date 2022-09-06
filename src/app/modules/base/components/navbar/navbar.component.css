@@ -1,0 +1,9 @@
+.navbar-divider {
+  flex: 1 1 auto;
+}
+.navbar-brand {
+  margin-left: 1rem;
+}
+.navbar-brand-link {
+  color: inherit;
+}

@@ -1,0 +1,15 @@
+.sidebar-container {
+  min-height: 55vh;
+
+}
+
+.sidebar-drawer {
+ background-color: var(--background-white)!important;
+}
+
+.sidebar-aside {
+
+}
+.sidebar-nav {
+
+}

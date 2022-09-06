@@ -1,0 +1,30 @@
+<mat-drawer-container class="sidebar-container" autosize>
+  <mat-drawer #drawer class="sidebar-drawer" mode="side">
+    <aside class="sidebar-aside">
+      <nav class="sidebar-nav">
+        <div *ngFor="let nav of navigation | keyvalue">
+          <button mat-menu-item routerLink="{{nav.value.link}}">
+            <mat-icon>{{nav.value.icon}}</mat-icon>
+            <span>{{nav.value.label}}</span>
+          </button>
+          <mat-divider></mat-divider>
+        </div>
+
+      </nav>
+    </aside>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()" color="primary">
+      <mat-icon *ngIf="!drawer.opened; else drawerClosed">keyboard_arrow_right</mat-icon>
+      <ng-template #drawerClosed>
+        <mat-icon *ngIf="drawer.opened; else drawerClosed">keyboard_arrow_left</mat-icon>
+      </ng-template>
+    </button>
+  </div>
+
+
+  <ng-content></ng-content>
+
+
+</mat-drawer-container>

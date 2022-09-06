@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export  class ViewHomeComponent implements OnInit {
 
+  bannerTitle = "Angular Cook-Book!";
+
   constructor() {}
 
   ngOnInit(): void {}

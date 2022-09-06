@@ -1,0 +1,61 @@
+<footer class="base-footer" [class]="{'mat-elevation-z2': true}">
+
+  <mat-divider></mat-divider>
+  <div class="footer-container" [class]="{'mat-elevation-z4': true}">
+    <mat-grid-list cols="3" rowHeight="2:1">
+      <mat-grid-tile></mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-list role="list" class="footer-list">
+          <mat-list-item class="footer-list-item" role="listitem">
+            <div>
+              <p>
+                Author: <a href="https://federicobau.dev/" target="_blank"> FedericoBau </a>
+              </p>
+              <p>
+                © {{ dateToday | date: 'yyyy' }} Copyright:
+                <a href="https://federicobau.dev/" target="_blank">federicobau.dev</a>
+              </p>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item class="footer-list-item" role="listitem">
+            <address>
+              <div class="footer-socials-container">
+                <a href="mailto:info@federicobau.dev ">
+                  <mat-icon matListIcon>mail_outline</mat-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/federico-baù-7a65338a/" target="_blank">
+                  <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i>
+                </a>
+                <a href="https://github.com/Koubae" target="_blank">
+                  <i class="fab fa-github fa-2x" style="color: #333333;"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/13903942/federico-baù" target="_blank">
+                  <i class="fab fa-stack-overflow fa-2x" style="color: #ffac44;"></i>
+                </a>
+                <a href="https://federicobau.dev/" target="_blank">
+                  <mat-icon matListIcon>code</mat-icon>
+                </a>
+              </div>
+            </address>
+
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item class="footer-list-item" role="listitem">
+            <div>
+              <small>Last Website Update: {{ lastWebSiteUpdate }}</small>
+            </div>
+
+          </mat-list-item>
+        </mat-list>
+
+      </mat-grid-tile>
+
+      <mat-grid-tile></mat-grid-tile>
+
+    </mat-grid-list>
+
+  </div>
+
+</footer>

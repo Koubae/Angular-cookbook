@@ -1,0 +1,29 @@
+
+.base-footer {
+  background: rgb(243, 243, 243);
+  min-height: 150px;
+  margin-top: .5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  margin-top: .5rem;
+
+}
+
+.footer-list {
+
+}
+.footer-list-item {
+  height: 100%!important;
+}
+
+.footer-socials-container {
+  margin: .5rem 0;
+}
+
+.footer-socials-container a {
+ margin: .2rem .5rem;
+}
