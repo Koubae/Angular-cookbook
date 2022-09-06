@@ -3,9 +3,7 @@
   background: rgb(243, 243, 243);
   min-height: 150px;
   margin-top: .5rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+
 }
 
 .footer-container {

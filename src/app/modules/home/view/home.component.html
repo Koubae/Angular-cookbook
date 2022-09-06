@@ -8,16 +8,42 @@
 </core-header>
 
 <core-content>
-  <section id="header">
-    <article>
-      <div>
-        <h1>Home : ) </h1>
-        <p class="parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur dolore eius
-          enim esse eum expedita illo inventore iste itaque iure, laudantium, molestiae nesciunt, odio placeat quaerat
-          sed tempore voluptas!</p>
-      </div>
-    </article>
+  <section id="saction-home-content">
+    <!--    <mat-grid-list cols="2" rowHeight="2:1">-->
+    <!--      <mat-grid-tile>1</mat-grid-tile>-->
+    <!--      <mat-grid-tile>2</mat-grid-tile>-->
+    <!--      <mat-grid-tile>3</mat-grid-tile>-->
+    <!--      <mat-grid-tile>4</mat-grid-tile>-->
+    <!--    </mat-grid-list>-->
 
+    <!--    <article>-->
+    <!--      <div>-->
+    <!--        <mat-card>Simple card</mat-card>-->
+    <!--      </div>-->
+    <!--      <div>-->
+    <!--        <mat-card  [class.mat-elevation-z8]="true">-->
+    <!--          <mat-card-title>Actions Buttons</mat-card-title>-->
+    <!--          <mat-card-subtitle>Start</mat-card-subtitle>-->
+    <!--          <mat-card-actions>-->
+    <!--            <button mat-button>LIKE</button>-->
+    <!--            <button mat-button>SHARE</button>-->
+    <!--          </mat-card-actions>-->
+    <!--        </mat-card>-->
+    <!--        <br>-->
+    <!--      </div>-->
+
+    <core-paper
+      [elevation]="8"
+    >
+       <mat-grid-list cols="1" rowHeight="55px">
+         <mat-grid-tile>
+           <h3>See all recipes!</h3>
+         </mat-grid-tile>
+          <mat-grid-tile>
+             <a mat-raised-button color="primary" routerLink="/dashboard"> Go to Dashboard</a>
+          </mat-grid-tile>
+        </mat-grid-list>
+    </core-paper>
 
   </section>
 </core-content>

@@ -1,0 +1,19 @@
+.core-paper {
+
+  background-color: transparent;
+}
+
+.core-paper-inflated-1  {
+   margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.core-paper-inflated-2  {
+   margin: 2rem;
+  padding: 2rem;
+}
+
+.core-paper-inflated-3  {
+   margin: 3.25rem;
+  padding: 3.25rem;
+}
