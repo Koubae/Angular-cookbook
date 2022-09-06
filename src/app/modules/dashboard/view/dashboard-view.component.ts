@@ -25,7 +25,7 @@ export class ViewDashboardComponent implements OnInit {
     0: {
       key: 'nav-bar',
       title: 'Nav Bars',
-      link: 'nav-bar',
+      link: 'nav-bars',
       icon: 'lan'
     },
     1: {

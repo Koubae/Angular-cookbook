@@ -10,12 +10,22 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import {RouterLinkWithHref} from "@angular/router";
+import {RouterLinkWithHref, RouterOutlet} from "@angular/router";
 import {KeyValuePipe, NgForOf} from "@angular/common";
+import { NavbarsComponent } from './components/navbars/navbars.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { LayoutsComponent } from './components/layouts/layouts.component';
+import { HeadersComponent } from './components/headers/headers.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 @NgModule({
   declarations: [
     ViewDashboardComponent,
+    NavbarsComponent,
+    ButtonsComponent,
+    LayoutsComponent,
+    HeadersComponent,
+    FormsComponent,
   ],
   imports: [
     ModuleDashboardRouting,
@@ -26,7 +36,8 @@ import {KeyValuePipe, NgForOf} from "@angular/common";
     MatButtonModule,
     RouterLinkWithHref,
     KeyValuePipe,
-    NgForOf
+    NgForOf,
+    RouterOutlet
   ],
   exports: [
     ViewDashboardComponent,

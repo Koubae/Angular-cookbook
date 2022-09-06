@@ -2,13 +2,15 @@ import {NgModule} from "@angular/core";
 
 // Material UI
 import {MatCardModule} from "@angular/material/card";
-import {NgClass} from "@angular/common";
+import {NgClass, NgIf} from "@angular/common";
 import {MatGridListModule} from "@angular/material/grid-list";
 
 // Components
 import {HeaderComponent} from "./components/header/header.component";
 import {ContentComponent} from "./components/content/content.component";
 import {PaperComponent} from "./components/paper/paper.component";
+import {RouterLinkWithHref} from "@angular/router";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -21,7 +23,10 @@ import {PaperComponent} from "./components/paper/paper.component";
   imports: [
     MatCardModule,
     NgClass,
-    MatGridListModule
+    MatGridListModule,
+    NgIf,
+    RouterLinkWithHref,
+    MatButtonModule
   ],
   exports: [
     HeaderComponent,

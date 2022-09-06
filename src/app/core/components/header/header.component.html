@@ -7,10 +7,19 @@
   <mat-grid-list class="header-component-grid" cols="1" rowHeight="{{ height.toString() + 'vh' }}">
     <mat-grid-tile class="header-component-grid-tile" [rowspan]="2">
       <div class="header-component-box">
-        <h1 class="header-component-title">{{title}}</h1>
-        <h5 class="header-component-title-sub">{{titleSub}}</h5>
+        <h1 [class.header-component-title]="title">{{title}}</h1>
+
+
+        <a *ngIf="titleSubLink; else titleSubDefault" routerLink="{{ titleSubLink }}" mat-button color="accent">
+           <h5 class="header-component-title-sub">{{titleSub}}</h5>
+        </a>
+        <ng-template #titleSubDefault>
+          <h5 class="header-component-title-sub">{{titleSub}}</h5>
+        </ng-template>
+
+
         <div #headerContent [class.header-component-content]="headerHasContent">
-           <ng-content></ng-content>
+          <ng-content></ng-content>
         </div>
       </div>
 

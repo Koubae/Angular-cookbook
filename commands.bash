@@ -13,6 +13,8 @@ ng generate component modules/base/components/sidebar
 # long form but redundant
 ng generate component modules/base/components/sidebar --module=modules/base/base.module.ts
 ng generate component modules/base/components/header --module=modules/base/base.module.ts
+# Generate component for dashboard
+ng generate component modules/dashboard/components/layouts --module=modules/dashboard/dashboard.module.ts
 
 
 # Generate component in core

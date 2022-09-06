@@ -6,11 +6,12 @@ import { Component, OnInit, Input,  ViewChild, TemplateRef, ElementRef } from '@
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() title: string = "";
-  @Input() titleSub: string = "";
+  @Input() title: string|undefined = "";
+  @Input() titleSub: string|undefined = "";
   @Input() height: number = 15;
   @Input() withBorder: boolean = false;
   @Input() elevated: boolean = false;
+  @Input() titleSubLink: string|undefined;
 
   headerHasContent: boolean = false;
 
